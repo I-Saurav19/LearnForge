@@ -1,0 +1,49 @@
+{
+  "name": "learnforge-ai-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "ai:check": "tsx src/scripts/check-gemini.ts",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@langchain/google-genai": "^2.3.2",
+    "@xmldom/xmldom": "^0.8.10",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^7.0.3",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "fflate": "^0.8.3",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.12.3",
+    "mongoose": "^8.16.0",
+    "multer": "^2.4.0",
+    "pdfjs-dist": "^6.3.289",
+    "ppt-to-text": "^1.0.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^22.15.0",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/parser": "^8.34.1",
+    "docx": "^9.7.2",
+    "eslint": "^9.28.0",
+    "pdf-lib": "^1.17.1",
+    "supertest": "^7.1.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitest": "^4.1.11"
+  }
+}
